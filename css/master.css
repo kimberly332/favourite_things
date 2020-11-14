@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  background-color: #fff0f4;
+  background-image: url("../images/background.png");
+  background-size: 200px 200px;
+  font-family: "Crimson Text", serif;
+}
+body h1 {
+  font-family: "Yeseva One", cursive;
+}
+
+.intro {
+  margin: 10px;
+}
+
+body {
+  text-align: center;
+}
+body .flex-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+body .flex-container .item {
+  margin: 10px;
+  position: relative;
+}
+body .flex-container .item img {
+  width: 100%;
+}
+body .flex-container .item i {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  opacity: 0;
+  transition: 0.5s ease;
+  font-size: 5em;
+}
+body .flex-container .item:hover {
+  cursor: pointer;
+}
+body .flex-container .item:hover img {
+  opacity: 0.5;
+}
+body .flex-container .item:hover i {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=master.css.map */
