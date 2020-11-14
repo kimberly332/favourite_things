@@ -18,40 +18,124 @@ body h1 {
 body {
   text-align: center;
 }
-body .flex-container {
+body .user-section {
   display: flex;
   flex-direction: row;
   margin: 10px;
 }
-body .flex-container .item {
+body .user-section .item {
   margin: 10px;
   position: relative;
 }
-body .flex-container .item img {
+body .user-section .item img {
   width: 100%;
 }
-body .flex-container .item i {
+body .user-section .item i {
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 45%;
+  left: 45%;
   opacity: 0;
   transition: 0.5s ease;
-  font-size: 5em;
+  font-size: 3em;
 }
-body .flex-container .item:hover {
+body .user-section .item:hover {
   cursor: pointer;
 }
-body .flex-container .item:hover img {
+body .user-section .item:hover img {
   opacity: 0.5;
 }
-body .flex-container .item:hover i {
+body .user-section .item:hover i {
   opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
-  .flex-container {
+  .user-section {
     flex-wrap: wrap;
   }
+}
+.popup {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.74 ease-in-out;
+  opacity: 1;
+}
+.popup .popup-inner {
+  position: relative;
+  bottom: -100vw;
+  right: -100vw;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  max-height: 599px;
+  width: 59%;
+  height: 80%;
+  background-color: white;
+  transition: 0.74s ease-in-out;
+  bottom: 0;
+  right: 0;
+}
+.popup .popup-inner .popup-close {
+  color: white;
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.875rem;
+  font-size: 400;
+  border-radius: 100%;
+  background-color: #24252A;
+  z-index: white;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.popup .popup-inner .popup-photo {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+.popup .popup-inner .popup-photo img {
+  width: auto;
+  height: 100%;
+}
+.popup .popup-inner .popup-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 59%;
+  height: 100%;
+  padding: 4rem;
+}
+.popup .popup-inner .popup-text .name {
+  font-size: 2rem;
+  font-weight: 599;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #0a0a0a;
+}
+.popup .popup-inner .popup-text .selfIntroduction {
+  font-size: 0.875rem;
+  color: black;
+  line-height: 1.5;
+}
+
+.showPopup {
+  display: flex;
 }
 
 /*# sourceMappingURL=master.css.map */
