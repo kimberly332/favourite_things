@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        
+        
+        .item {
+            margin: 10px;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+            i {
+                // color: palevioletred;
+                position: absolute;
+                top: 40%;
+                left: 40%;
+                opacity: 0;
+                transition: .5s ease;
+                font-size: 5em;
+            }
+        }
+        .item:hover {
+            cursor: pointer;
+
+            img {
+                opacity: 0.5;
+            }
+            i {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+}

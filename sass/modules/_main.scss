@@ -1,0 +1,16 @@
+// main rules
+body {
+    margin: 0; 
+    border: 0;
+    box-sizing: border-box;
+
+    background-color: rgba(255, 240, 244);
+    background-image: url("../images/background.png");
+    background-size: 200px 200px;
+    
+    font-family: 'Crimson Text', serif;
+    
+    h1 {
+        font-family: 'Yeseva One', cursive;
+    }
+}
