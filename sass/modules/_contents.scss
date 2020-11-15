@@ -1,7 +1,7 @@
 body {
     text-align: center;
 
-    .flex-container {
+    .user-section {
         display: flex;
         flex-direction: row;
         margin: 10px;
@@ -17,11 +17,11 @@ body {
             i {
                 // color: palevioletred;
                 position: absolute;
-                top: 40%;
-                left: 40%;
+                top: 45%;
+                left: 45%;
                 opacity: 0;
                 transition: .5s ease;
-                font-size: 5em;
+                font-size: 3em;
             }
         }
         .item:hover {
@@ -38,7 +38,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .flex-container {
+    .user-section {
         flex-wrap: wrap;
     }
 }
