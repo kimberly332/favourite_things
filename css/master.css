@@ -11,6 +11,10 @@ body h1 {
   font-family: "Yeseva One", cursive;
 }
 
+.hidden {
+  display: none;
+}
+
 .intro {
   margin: 10px;
 }
@@ -18,19 +22,19 @@ body h1 {
 body {
   text-align: center;
 }
-body .user-section {
+body .display-section {
   display: flex;
   flex-direction: row;
   margin: 10px;
 }
-body .user-section .item {
+body .display-section .item {
   margin: 10px;
   position: relative;
 }
-body .user-section .item img {
+body .display-section .item img {
   width: 100%;
 }
-body .user-section .item i {
+body .display-section .item i {
   position: absolute;
   top: 45%;
   left: 45%;
@@ -38,18 +42,18 @@ body .user-section .item i {
   transition: 0.5s ease;
   font-size: 3em;
 }
-body .user-section .item:hover {
+body .display-section .item:hover {
   cursor: pointer;
 }
-body .user-section .item:hover img {
+body .display-section .item:hover img {
   opacity: 0.5;
 }
-body .user-section .item:hover i {
+body .display-section .item:hover i {
   opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
-  .user-section {
+  .display-section {
     flex-wrap: wrap;
   }
 }
@@ -85,27 +89,30 @@ body .user-section .item:hover i {
   right: 0;
 }
 .popup .popup-inner .popup-close {
-  color: white;
+  background-color: black;
   position: absolute;
   right: -1rem;
   top: -1rem;
   width: 3rem;
   height: 3rem;
-  font-size: 0.875rem;
-  font-size: 400;
   border-radius: 100%;
-  background-color: #24252A;
   z-index: white;
   line-height: 3rem;
   text-align: center;
   cursor: pointer;
+}
+.popup .popup-inner .popup-close a {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: white;
   text-decoration: none;
 }
 .popup .popup-inner .popup-photo {
   display: flex;
   justify-content: flex-end;
   align-content: flex-end;
-  width: 40%;
+  width: 100%;
   height: 100%;
   overflow: hidden;
 }
